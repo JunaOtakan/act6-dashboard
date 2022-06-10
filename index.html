@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Dashboard - NEMSU</title>
+</head>
+
+<body>
+  <!-- top navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+      </button>
+      <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">North Eastern State University</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
+        aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNavBar">
+        <form class="d-flex ms-auto my-3 my-lg-0">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- top navigation bar -->
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabindex="-1" id="sidebar">
+    <div class="offcanvas-body p-0">
+      <nav class="navbar-dark">
+        <ul class="navbar-nav">
+          <li>
+            <div class="text-muted small fw-bold text-uppercase px-3">
+              NEMSU
+            </div>
+          </li>
+          <li>
+            <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts">
+              <span class="me-2"><i class="bi bi-layout-split"></i></span>
+              <span>My Portal</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+            <div class="collapse" id="layouts">
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="#user" class="nav-link px-3">
+                    <span class="me-2"><i class=""></i></span>
+                    <span>User</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#class" class="nav-link px-3">
+                    <span class="me-2"><i class=""></i></span>
+                    <span>Class Schedules</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#bills" class="nav-link px-3">
+                    <span class="me-2"><i class=""></i></span>
+                    <span>Bills & Payments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class=""></i></span>
+                    <span>Course Prospectus</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- offcanvas -->
+  <main class="mt-5 pt-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>User</h4>
+        </div>
+      </div>
+      <div id="user">
+        <div id="page-wrapper">
+          <div class="">
+            <div class="col-sm-15">
+              <div class="panel-body page-content">
+                <table class="reference table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Personal Information</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="50%" valign="midle" align="center ">Photo:</td>
+                      <td><img height="144" width="144" src="images/img.jpg"></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Complete Name:</td>
+                      <td><b>JUNAV OTAKAN</b></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Civil Status:</td>
+                      <td>Single</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Gender:</td>
+                      <td>Female</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Religion:</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Tribe:</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Birth Date:</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Birth Place:</td>
+                      <td>Sayon, Tagbina</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Municipality/Province:</td>
+                      <td>TAGBINA, Surigao del Sur</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="reference table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Academic Information</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="50%" align="right">Student ID:</td>
+                      <td><b>1010237</b></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Course/Curriculum:</td>
+                      <td>Bachelor of Science in Computer Science, 2018</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Year Level:</td>
+                      <td>2nd year</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Attended:</td>
+                      <td>3-1st semester; 2-2nd semester</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Scholarship:</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Year/Semester Admitted:</td>
+                      <td>2019, 1st semester</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">School Last Attended:</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">High School Graduated:</td>
+                      <td>Tagbina National High School</td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="right">Academic Adviser:</td>
+                      <td>Myelinda BALDELOVAR</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div id="user"></div>
+        </div>
+
+        <div id="class">
+          <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header"><i class='bx bxs-calendar alt icon'></i>My Class Schedules</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Academic Year/Semester: 2021, 2nd semester</div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="reference table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align:center">Subject Code</th>
+                                            <th style="text-align:center">Section</th>
+                                            <th style="text-align:center">Units</th>
+                                            <th style="text-align:center">Descriptive Title</th>
+                                            <th style="text-align:center">Schedule</th>
+                                            <th style="text-align:center">Room</th>
+                                            <th style="text-align:center">Instructor(s)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: left">CS 221*</td>
+                                            <td style="text-align: center">BSCS 2A</td>
+                                            <td style="text-align: center">3.00</td>
+                                            <td style="text-align: left">Algorithms &amp; Complexity</td>
+                                            <td style="text-align: left">M 08:00am-10:00am T 08:00am-09:00am</td>
+                                            <td style="text-align: left">NB Rm. 203</td>
+                                            <td style="text-align: left">JOSE JR. CANDIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">CS 222*</td>
+                                            <td style="text-align: center">BSCS 2A</td>
+                                            <td style="text-align: center">3.00</td>
+                                            <td style="text-align: left">Information Management</td>
+                                            <td style="text-align: left">W 08:00am-11:00am M 11:00am-12:00pm T
+                                                11:00am-12:00pm</td>
+                                            <td style="text-align: left">NB Rm. 203</td>
+                                            <td style="text-align: left">JOSE JR. CANDIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">CS 223*</td>
+                                            <td style="text-align: center">BSCS 2A</td>
+                                            <td style="text-align: center">3.00</td>
+                                            <td style="text-align: left">Web System &amp; Technologies</td>
+                                            <td style="text-align: left">M 02:00pm-05:00pm M 01:00pm-02:00pm T
+                                                09:00am-10:00am</td>
+                                            <td style="text-align: left">NB Rm. 203</td>
+                                            <td style="text-align: left">LANDREX REBUERA</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">Ecos 1</td>
+                                            <td style="text-align: center">BSCS 2A</td>
+                                            <td style="text-align: center">3.00</td>
+                                            <td style="text-align: left">People and the Earth's Ecosystem</td>
+                                            <td style="text-align: left"></td>
+                                            <td style="text-align: left"></td>
+                                            <td style="text-align: left">LUZVIMINDA PANES</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">GE-RPH</td>
+                                            <td style="text-align: center">BSCS 2A</td>
+                                            <td style="text-align: center">3.00</td>
+                                            <td style="text-align: left">Reading in the Philippine History</td>
+                                            <td style="text-align: left">MTW 07:00pm-08:00pm</td>
+                                            <td style="text-align: left">NB Rm. 203</td>
+                                            <td style="text-align: left">JAYSON HUSAIN</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">Math 2*</td>
+                                            <td style="text-align: center">BSCS 2A</td>
+                                            <td style="text-align: center">3.00</td>
+                                            <td style="text-align: left">Theory &amp; Computation</td>
+                                            <td style="text-align: left">H 08:00am-10:00am T 02:00pm-03:00pm</td>
+                                            <td style="text-align: left">NB Rm. 203</td>
+                                            <td style="text-align: left">EMMER RUAYA</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left">PE 4</td>
+                                            <td style="text-align: center">BSCS 2A</td>
+                                            <td style="text-align: center">2.00</td>
+                                            <td style="text-align: left">Recreational Activities</td>
+                                            <td style="text-align: left">W 11:00am-12:00pm T 01:00pm-02:00pm</td>
+                                            <td style="text-align: left">NB Rm. 203</td>
+                                            <td style="text-align: left">NICOMEDES VILLAMOR</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bills">
+
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title" id="myModalLabel">Payment Details</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="panel-body">
+                    <div class="table-responsive">
+                      <table class="reference table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th style="text-align: center">Description</th>
+                            <th style="text-align: center">Subject</th>
+                            <th style="text-align: center">Amount</th>
+                            <th style="text-align: center">Paid</th>
+                            <th style="text-align: center">Balance</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align: left">Tuition without Discount</td>
+                            <td style="text-align: left">Math 2*</td>
+                            <td style="text-align: right">600.00</td>
+                            <td style="text-align: right">0.00</td>
+                            <td style="text-align: right">600.00</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: left">Tuition without Discount</td>
+                            <td style="text-align: left">GE-RPH</td>
+                            <td style="text-align: right">600.00</td>
+                            <td style="text-align: right">0.00</td>
+                            <td style="text-align: right">600.00</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: left">Tuition without Discount</td>
+                            <td style="text-align: left">CS 222*</td>
+                            <td style="text-align: right">600.00</td>
+                            <td style="text-align: right">0.00</td>
+                            <td style="text-align: right">600.00</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: left">Tuition without Discount</td>
+                            <td style="text-align: left">CS 223*</td>
+                            <td style="text-align: right">600.00</td>
+                            <td style="text-align: right">0.00</td>
+                            <td style="text-align: right">600.00</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: left">Tuition without Discount</td>
+                            <td style="text-align: left">PE 4</td>
+                            <td style="text-align: right">400.00</td>
+                            <td style="text-align: right">0.00</td>
+                            <td style="text-align: right">400.00</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: left">Tuition without Discount</td>
+                            <td style="text-align: left">Ecos 1</td>
+                            <td style="text-align: right">600.00</td>
+                            <td style="text-align: right">0.00</td>
+                            <td style="text-align: right">600.00</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: left">Tuition without Discount</td>
+                            <td style="text-align: left">CS 221*</td>
+                            <td style="text-align: right">600.00</td>
+                            <td style="text-align: right">0.00</td>
+                            <td style="text-align: right">600.00</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" style="text-align: center">Grand Total</td>
+                            <td style="text-align: right">4,000.00 </td>
+                            <td style="text-align: right">0.00 </td>
+                            <td style="text-align: right">4,000.00 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="2"></div>
+    </div>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/jquery.dataTables.min.js"></script>
+  <script src="./js/dataTables.bootstrap5.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
